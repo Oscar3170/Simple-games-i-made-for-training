@@ -12,12 +12,13 @@ def pc_choice():
 	choices = ('rock', 'paper', 'scissors')
 	return choices[pc]
 
-pcs = pc_choice()
+pc = pc_choice()
 
 print (pcs)
 
 while playas_choice not in choices:
 	playas_choice = input('Sorry i didnt understand what you meant. Pls try again: ')
+	
 while playas_choice == pcs:
 	print ('Its a draw')
 	choice = input('Do you want to try again?(yes or no) ')
